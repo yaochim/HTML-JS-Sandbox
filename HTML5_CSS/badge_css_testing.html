@@ -5,28 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Star Icon in CSS</title>
 <style>
+    .back{
+        background-color: silver;
+        padding: 15px 10px;
+    }
+    .desc {
+        padding: 10px 0px;
+    }
     .badge {
         display: inline-block;
         font-weight: bold;
         text-align: center;
         vertical-align: middle;
-        border: 1px solid black;
+        border: 1px solid blueviolet;
         padding: 2px 10px;
         border-radius: .25rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: .75rem;
     }
     .featured-badge {
-        background-color: gold;
+        background: rgb(241,232,113);
+        background: radial-gradient(circle, rgba(241,232,113,1) 50%, rgba(213,191,4,1) 100%); 
+        border: 1px solid rgba(51, 49, 39, 0.656);
+        
+    }
+    .sponsored-badge {
+        background: rgb(113,179,241);
+        background: radial-gradient(circle, rgb(150, 200, 248) 50%, rgb(68, 134, 240) 100%);
+        border: 1px solid rgba(51, 49, 39, 0.656);
     }
     
 </style>
 </head>
 <body>
 
-<div>
-<div class="badge featured-badge">Featured</div>
-<div class="badge sponsored-badge">Sponsored</div>
+<div class="back">
+    <div class="desc">some description lorem ipsum dolor sit amet, consectetur adipis</div>
+    <div class="badge featured-badge">Featured</div>
+    <div class="badge sponsored-badge">Sponsored</div>
 </div>
 
 </body>
